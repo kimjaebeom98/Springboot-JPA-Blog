@@ -41,7 +41,6 @@ public class Board {
 	@Lob // 대용량 데이터 
 	private String content; // 섬머노트 라이브러리 <html>태그가 섞여서 디자인이 됨.
 	
-	@ColumnDefault("0") // 홀 따옴표가 없으니깐 db에는 number값임
 	private int count;
 	
 	@ManyToOne(fetch = FetchType.EAGER) // Many = Blog, One = User, board를 불러올 때 user정보 무조건 불러온다(EAGER)

@@ -10,6 +10,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.jaebeom.blog.model.RoleType;
 import com.jaebeom.blog.model.User;
 
+import lombok.Data;
+
+@Data
 public class PrincipalDetail implements UserDetails{
 	
 	private User user; // 객체를 품고있는 것은 콤포지션, extends는 객체를 사용하는 것
